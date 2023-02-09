@@ -23,3 +23,7 @@ if __name__ == "__main__":
 
     for entry in entries:
         logger.info(f"processing entry {entry.title}")
+    
+    with open("README.md", "w") as f:
+        f.write("Latest item: {entries[0]}")
+    
