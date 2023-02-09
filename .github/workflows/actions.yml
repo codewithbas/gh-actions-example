@@ -39,5 +39,5 @@ jobs:
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
-          ssh-key: ${{ secrets.SSH_KEY }}
+          github_token: ${{ secrets.GH_TOKEN }}
           branch: main 
